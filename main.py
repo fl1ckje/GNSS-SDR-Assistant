@@ -13,7 +13,7 @@ import trio
 TERMINAL_APP_NAME = 'konsole'
 
 working_dir = os.path.dirname(os.path.abspath(sys.argv[0])).replace('\\', '/')
-spectrum_viewer_path = working_dir + 'gnu_radio/dist/spectrum_viewer'
+spectrum_viewer_path = working_dir + '/gnu_radio/dist/spectrum_viewer'
 
 spectrum_viewer_subproc = None
 gnss_sdr_subproc = None
