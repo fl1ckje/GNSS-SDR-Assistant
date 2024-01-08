@@ -22,7 +22,7 @@ If you have got a desktop pc/laptop with Mac OS, I would appreciate your feedbac
 
 ## Build, install and run quick-guide
 ### 1. Build and install GNSS-SDR
-You can follow the steps below or official [GNSS-SDR readme].
+You can follow the steps below (for Debian/Ubuntu) or official [GNSS-SDR readme].
 
 1. Install dependencies using software packages:
 ```sh
