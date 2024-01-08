@@ -45,7 +45,7 @@ $ cmake -DENABLE_OSMOSDR=ON -DENABLE_UHD=OFF -DENABLE_PACKAGING=ON \
 ```sh
 $ make && sudo make install
 ```
-Important notice: you can modify some [building configuration options] to match your SDR device. I've chosen [OsmoSDR] (HackRF One/RTL-SDR/BladeRF/LimeSDR implementation).
+Important note: you can modify some [building configuration options] to match your SDR device. I've chosen [OsmoSDR] (HackRF One/RTL-SDR/BladeRF/LimeSDR implementation).
 
 3. In order to take advantage of the SIMD instruction sets present in your processor, you will need to run the profiler tools of the VOLK and VOLK_GNSSSDR libraries (these operations only need to be done once, and can take a while):
 ```sh
