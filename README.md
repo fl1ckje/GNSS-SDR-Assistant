@@ -10,7 +10,7 @@ GUI is implemented with [DearPyGUI]. Spectrum analyzer is implemented with [GNU 
 At the current time, this application can:
 * run spectrum analyzer as subprocess with [HackRF One] SDR;
 * run GNSS-SDR as subprocess with provided conf file;
-* provide information about GNSS_Synchro and PVT_Monitor serialized objects from GNSS-SDR.
+* provide information from GNSS_Synchro and PVT_Monitor protobuf serialized objects, which are generated and transmitted from GNSS-SDR to IP-network using UDP protocol.
 
 ## Supported operating systems
 Application runs on Linux:
