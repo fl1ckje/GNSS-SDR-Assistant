@@ -223,13 +223,13 @@ def run_gnss_sdr_subproc():
     gnss-sdr subprocess in separate thread
     '''
     global gnss_sdr_subproc, active_conf_path
-    [TERMINAL_APP_NAME, "-e", "bash -c 'gnss-sdr -c=./cfg/gl.conf; exec bash'"]
-    gnss_sdr_subproc = subprocess.Popen(
-        args=[TERMINAL_APP_NAME, "-e",
-              f"bash -c 'gnss-sdr -c={active_conf_path}; exec bash'"])
-
+    # [TERMINAL_APP_NAME, "-e", "bash -c 'gnss-sdr -c=./cfg/gl.conf; exec bash'"]
     # gnss_sdr_subproc = subprocess.Popen(
-    #     ['xterm', '-hold', '-e', f'gnss-sdr -c={active_conf_path}'])
+    #     args=[TERMINAL_APP_NAME, "-e",
+    #           f"bash -c 'gnss-sdr -c={active_conf_path}; exec bash'"])
+
+    gnss_sdr_subproc = subprocess.Popen(
+        ['xterm', '-hold', '-e', f'gnss-sdr -c={active_conf_path}'])
     # use xterm if gnome doesnt work
 
 
