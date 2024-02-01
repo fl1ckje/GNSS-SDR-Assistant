@@ -1,7 +1,7 @@
 # GNSS-SDR-Assistant
 ![Maintenance](https://img.shields.io/badge/maintenance-stable-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Discord](https://img.shields.io/badge/chat-on_discord-%237289DA.svg)
+[![Discord](https://img.shields.io/badge/chat-on_discord-%237289DA.svg)](https://discordapp.com/users/346979343995633664)
 
 GNSS-SDR-Assistant is a python application with graphical user interface (GUI) for monitoring the internal status of the software receiver defined by GNSS-SDR in real time.
 
