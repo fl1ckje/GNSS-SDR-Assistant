@@ -53,28 +53,32 @@ $ cd $HOME
 $ volk_profile && volk_gnsssdr_profile
 ```
 ### 2. Build and run GNSS-SDR-Assistant
-1. Clone GNSS-SDR-Assistant:
+1. Install xterm:
+```sh
+$ sudo apt install xterm
+```
+2. Clone GNSS-SDR-Assistant:
 ```sh
 $ git clone https://github.com/fl1ckje/GNSS-SDR-Assistant
 $ cd GNSS-SDR-Assistant
 ```
-2. Install Python dependencies:
+3. Install Python dependencies:
 ```sh
 $ pip3 install -r requirements.txt
 ```
-3. Build spectrum viewer and make it executable:
+4. Build spectrum viewer and make it executable:
 ```sh
 $ cd gnu_radio
 $ pyinstaller spectrum_viewer.py --clean --onefile --strip
 $ chmod +x ./dist/spectrum_viewer
 ```
-4. Generate protobuf code bindings:
+5. Generate protobuf code bindings:
 ```sh
 $ cd ..
 $ protoc -I=./protobuf --python_out=. ./protobuf/gnss_synchro.proto
 $ protoc -I=./protobuf --python_out=. ./protobuf/monitor_pvt.proto
 ```
-5. Run GNSS-SDR-Assistant:
+6. Run GNSS-SDR-Assistant:
 ```sh
 $ python3 main.py
 ```
